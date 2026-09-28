@@ -1,68 +1,47 @@
-# Customer Churn Prediction Analysis
+# 📊 Customer Churn Prediction Analysis
 
-## 📌 Project Overview
+An end-to-end Machine Learning project that predicts whether a telecom customer is likely to churn based on demographic, service, contract, and billing information.
 
-This project analyzes customer churn using data analysis and machine learning techniques.
+## 🚀 Live Demo
 
-The goal is to identify customers who are more likely to leave a telecommunications service and understand the factors associated with customer churn.
+🔗 Streamlit App:
+https://customer-churn-prediction-analysis-fxmycdgtrpkmfzcu4y6wy6.streamlit.app/
 
-## 🎯 Objectives
+## 🎯 Project Objective
 
-- Analyze customer demographics and service-related information.
-- Perform data cleaning and preprocessing.
-- Explore factors influencing customer churn.
-- Build machine learning models for churn prediction.
-- Compare model performance using multiple evaluation metrics.
-- Provide business recommendations for customer retention.
+Customer churn is an important business problem for telecom companies.
+
+This project uses Machine Learning to:
+
+- Predict customer churn
+- Calculate churn probability
+- Identify customers at potential risk
+- Provide an interactive prediction interface
 
 ## 🛠️ Technologies Used
 
 - Python
 - Pandas
 - NumPy
-- Matplotlib
-- Seaborn
 - Scikit-learn
+- Joblib
+- Streamlit
 - Jupyter Notebook
+- Git & GitHub
 
-## 🤖 Machine Learning Models
-
-The following classification models were implemented:
-
-- Logistic Regression
-- Random Forest
-
-## 📊 Model Evaluation
-
-The models were evaluated using:
-
-- Accuracy
-- Precision
-- Recall
-- F1 Score
-- ROC-AUC
-
-### Results
-
-| Model | Accuracy | Precision | Recall | F1 Score | AUC |
-|---|---:|---:|---:|---:|---:|
-| Logistic Regression | 80.17% | 64.44% | 56.68% | 60.31% | 0.836 |
-| Random Forest | 76.97% | 55.63% | 66.04% | 60.39% | 0.818 |
-
-## 💡 Business Recommendations
-
-Based on the analysis:
-
-- Identify customers with short tenure and high monthly charges.
-- Provide targeted retention offers to month-to-month customers.
-- Improve customer support and technical assistance.
-- Encourage customers to move toward longer-term contracts.
-- Monitor customers with higher predicted churn risk.
-
-## 📁 Project Structure
+## 📂 Project Structure
 
 ```text
 Customer-Churn-Prediction-Analysis/
 │
+├── app.py
 ├── Customer_Churn_Prediction_Analysis.ipynb
-└── README.md
+├── requirements.txt
+├── README.md
+│
+├── data/
+│   └── Telco-Customer-Churn.csv
+│
+└── model/
+    ├── churn_model.pkl
+    └── preprocessor.pkl
